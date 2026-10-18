@@ -1,0 +1,143 @@
+{
+  "tests": [
+    {
+      "name": "Production subpath, metadata, disconnected controls, wallet discovery and keyboard focus",
+      "passed": true,
+      "durationMs": 1259
+    },
+    {
+      "name": "Phone wallet links and Coinbase Smart Wallet without an injected provider",
+      "passed": true,
+      "durationMs": 1283
+    },
+    {
+      "name": "Unknown wallet chain adds unchanged handoff network and switches to Sepolia",
+      "passed": true,
+      "durationMs": 1830
+    },
+    {
+      "name": "Connection rejection is announced and retry remains available",
+      "passed": true,
+      "durationMs": 1048
+    },
+    {
+      "name": "Exact approval precedes deposit, receipt refreshes balances, and blank input cannot send",
+      "passed": true,
+      "durationMs": 4458
+    },
+    {
+      "name": "Withdrawal review shows exact 90/9/1 split and claims work independently",
+      "passed": true,
+      "durationMs": 3860
+    },
+    {
+      "name": "Exit withdraws principal and both reward types in one reviewed call",
+      "passed": true,
+      "durationMs": 1861
+    },
+    {
+      "name": "Simulation failure prevents wallet signing and displays decoded custom error",
+      "passed": true,
+      "durationMs": 1856
+    },
+    {
+      "name": "Wallet rejection restores the same action for retry without broadcasting",
+      "passed": true,
+      "durationMs": 1747
+    },
+    {
+      "name": "Pending receipt keeps action locked, then confirms and refreshes",
+      "passed": true,
+      "durationMs": 7661
+    },
+    {
+      "name": "A reverted receipt reports failure and allows a fresh review",
+      "passed": true,
+      "durationMs": 3392
+    },
+    {
+      "name": "Changing accounts during review cannot sign the previous wallet's plan",
+      "passed": true,
+      "durationMs": 2184
+    },
+    {
+      "name": "Wrong-network state stays visible after an external chain change",
+      "passed": true,
+      "durationMs": 2252
+    },
+    {
+      "name": "Permissionless reward funding uses fresh allowance before adding reserve",
+      "passed": true,
+      "durationMs": 3445
+    },
+    {
+      "name": "Native buy quotes by eth_call and uses configured router, hook and exact ETH value",
+      "passed": true,
+      "durationMs": 2802
+    },
+    {
+      "name": "Token sell requires separate token and Permit2 approvals before zero-value swap",
+      "passed": true,
+      "durationMs": 4962
+    },
+    {
+      "name": "Quote invalidates on amount, direction and slippage changes",
+      "passed": true,
+      "durationMs": 1752
+    },
+    {
+      "name": "Owner setup, farm pause and irreversible renouncement guard",
+      "passed": true,
+      "durationMs": 7426
+    },
+    {
+      "name": "Owner can create farms, transfer Treasury funding, refill and start a schedule",
+      "passed": true,
+      "durationMs": 6951
+    },
+    {
+      "name": "Non-owner cannot reach administrative controls",
+      "passed": true,
+      "durationMs": 1618
+    },
+    {
+      "name": "Wallet read fallback works when every configured public RPC fails",
+      "passed": true,
+      "durationMs": 2551
+    },
+    {
+      "name": "Absent deployed bytecode blocks all transaction actions",
+      "passed": true,
+      "durationMs": 1011
+    },
+    {
+      "name": "Tampered ABI fails closed before connecting or rendering transaction controls",
+      "passed": true,
+      "durationMs": 494
+    },
+    {
+      "name": "Mobile first screen, desktop, long balances, full addresses and no horizontal overflow",
+      "passed": true,
+      "durationMs": 3315
+    },
+    {
+      "name": "Automated accessibility scan on farms, wallet dialog, guide and admin",
+      "passed": true,
+      "durationMs": 9734
+    }
+  ],
+  "browsers": {
+    "chromium": "156.0.8078.4",
+    "webkit": "Unavailable"
+  },
+  "screenshots": [
+    "mobile-wallets.png",
+    "mock-admin-desktop.png",
+    "mock-mobile-390.png",
+    "mock-desktop-1440.png"
+  ],
+  "limitations": [
+    "WebKit could not launch: Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgtk-4.so.1                                    ║\n║     libpangocairo-1.0.so.0                           ║\n║     libgdk_pixbuf-2.0.so.0                           ║\n║     libcairo-gobject.so.2                            ║\n║     libgraphene-1.0.so.0                             ║\n║     liblcms2.so.2                                    ║\n║     libevent-2.1.so.7                                ║\n║     libopus.so.0                                     ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║  "
+  ],
+  "passed": true
+}

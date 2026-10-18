@@ -1,0 +1,92 @@
+{
+  "chainId": 11155111,
+  "poolKey": {
+    "fee": 12500,
+    "hooks": "0xa0602cb30558d5dd17415b6268a4feea3a0ca000",
+    "currency0": "0x0000000000000000000000000000000000000000",
+    "currency1": "0xe38529515da53bad2951060f7c43e8f3458990e5",
+    "tickSpacing": 60
+  },
+  "repoUrl": "https://github.com/identity-md-launches/launch-2152-workflow-contract-stage-context",
+  "version": 1,
+  "launchId": "cdc4889e-f66e-4f0c-bb2f-f1a7f729f598",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 12500,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Locker (LOCKER) farming platform on Sepolia. LaunchToken is the fixed-supply LOCKER token with no constructor arguments. LockerTreasury(owner_, lockerToken_) is the owner-controlled vault that receives the 1% Treasury share of withdrawal fees and refills farm reward reserves; its ownership is two-step and cannot be renounced. LockerFarmFactory(owner_, rewardToken_, treasury_) is the registry the owner uses to create further isolated farms (IMD, sIMD) after launch; renouncing its ownership permanently ends farm creation. LockerFarm(stakingToken_, rewardToken_, treasury_, admin_) is the LOCKER staking farm deployed at launch: both staking and reward token are LOCKER, the fee recipient is LockerTreasury, and admin_ is the launch owner as initial emissions manager and guardian (each role individually and permanently renounceable; renouncing the emissions manager returns any uncommitted reward reserve to LockerTreasury in the same transaction, and the guardian can only pause deposits, never withdrawals or claims). Every owner and admin argument is $owner; nothing is owned by the factory or by IMD. Constructors are nonpayable, make no external calls and store addresses only. No initialization calls. No contract here is allocated any LOCKER at launch; the requester funds the Treasury and the farms after launch. The IMD and sIMD farms are created by the owner through LockerFarmFactory.createFarm once the token addresses are known, and the LOCKER farm is listed with registerFarm. Pool pairing: the manifest assignment's 'This launch' section pins the pair as native ETH ('Pair: native ETH. pool.pairedCurrency is the zero address'), states that admission refuses any other paired currency, and fixes pool.fee at 12500, tickSpacing at 60 and initialPrice as written; pairedCurrency therefore follows that launch section rather than the brief's LOCKER/IMD wording. The deployer derives the opening price from the policy's opening market cap (20 ETH for the whole supply) and the token's address, so pool.initialPrice is not the opening price.",
+    "token": {
+      "name": "Locker",
+      "symbol": "LOCKER",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "LockerTreasury",
+        "constructorArgs": [
+          "$owner",
+          "$token"
+        ]
+      },
+      {
+        "contract": "LockerFarmFactory",
+        "constructorArgs": [
+          "$owner",
+          "$token",
+          "$contract:LockerTreasury"
+        ]
+      },
+      {
+        "contract": "LockerFarm",
+        "constructorArgs": [
+          "$token",
+          "$token",
+          "$contract:LockerTreasury",
+          "$owner"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0x3c4e2133da772ea0020b1457ed568c3c7828c8417d746efab791793fada2a368",
+      "abiHash": "f36d2fe28b62f817a4fba0b78bb501b41895eada3982280273c063ad8183f577",
+      "address": "0xe38529515da53bad2951060f7c43e8f3458990e5",
+      "blockNumber": 11940160,
+      "creationCodeHash": "837f07f1eb234f1d34353c4fb1388ea7429dbb4c8543cb4d307a20eff81bbeb1"
+    },
+    {
+      "name": "LockerTreasury",
+      "txHash": "0x3c4e2133da772ea0020b1457ed568c3c7828c8417d746efab791793fada2a368",
+      "abiHash": "026b62af24a445249e2e5ec9b9dd65a8b2317d719fc75e3b7c71aec695c41945",
+      "address": "0xbc0bdf9b4a3c1b7dcea14aa5d55d9187bfadc73a",
+      "blockNumber": 11940160,
+      "creationCodeHash": "ae92d01d7c9666ca5d9f89b5b0de6adfd381748de819e94f7655c9d28f00a744"
+    },
+    {
+      "name": "LockerFarmFactory",
+      "txHash": "0x3c4e2133da772ea0020b1457ed568c3c7828c8417d746efab791793fada2a368",
+      "abiHash": "9bde1dba8ddb9791ed3dfd120c7904533a92c45f512c3b2ee6a0f576c24e3e1a",
+      "address": "0xefea131b90183150eac7c53b51a1dc995e2f78f9",
+      "blockNumber": 11940160,
+      "creationCodeHash": "0bdfd2d64b65ed5b884359bc941e465b70cae2195b5bc7037db3c42e7d8bfc37"
+    },
+    {
+      "name": "LockerFarm",
+      "txHash": "0x3c4e2133da772ea0020b1457ed568c3c7828c8417d746efab791793fada2a368",
+      "abiHash": "6b024e6b16cf361713752d2d5ce05ea2c55db4858041688216aa90955884098a",
+      "address": "0x21f47f330d99cd1ce97a6fb9553126ed58a18fc0",
+      "blockNumber": 11940160,
+      "creationCodeHash": "e20207fd3a3dfc4eecaf70bf82cbafe8de42bbb3e4c819b10d25c367b2ef3f4d"
+    }
+  ],
+  "sourceCommit": "f27a482805c941e6e086a94ec46e1121ba896984",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "5d449eeee94d590710edd1ffc3ddee0b988adda429344de7119e171949e85e68"
+}

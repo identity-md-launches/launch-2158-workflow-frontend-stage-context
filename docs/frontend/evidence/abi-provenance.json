@@ -1,0 +1,34 @@
+{
+  "sourceCommit": "f27a482805c941e6e086a94ec46e1121ba896984",
+  "passed": true,
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "path": "docs/abi/LaunchToken.json",
+      "sourceBytesMatch": true,
+      "expectedAbiHash": "f36d2fe28b62f817a4fba0b78bb501b41895eada3982280273c063ad8183f577",
+      "actualAbiHash": "f36d2fe28b62f817a4fba0b78bb501b41895eada3982280273c063ad8183f577"
+    },
+    {
+      "name": "LockerTreasury",
+      "path": "docs/abi/LockerTreasury.json",
+      "sourceBytesMatch": true,
+      "expectedAbiHash": "026b62af24a445249e2e5ec9b9dd65a8b2317d719fc75e3b7c71aec695c41945",
+      "actualAbiHash": "026b62af24a445249e2e5ec9b9dd65a8b2317d719fc75e3b7c71aec695c41945"
+    },
+    {
+      "name": "LockerFarmFactory",
+      "path": "docs/abi/LockerFarmFactory.json",
+      "sourceBytesMatch": true,
+      "expectedAbiHash": "9bde1dba8ddb9791ed3dfd120c7904533a92c45f512c3b2ee6a0f576c24e3e1a",
+      "actualAbiHash": "9bde1dba8ddb9791ed3dfd120c7904533a92c45f512c3b2ee6a0f576c24e3e1a"
+    },
+    {
+      "name": "LockerFarm",
+      "path": "docs/abi/LockerFarm.json",
+      "sourceBytesMatch": true,
+      "expectedAbiHash": "6b024e6b16cf361713752d2d5ce05ea2c55db4858041688216aa90955884098a",
+      "actualAbiHash": "6b024e6b16cf361713752d2d5ce05ea2c55db4858041688216aa90955884098a"
+    }
+  ]
+}

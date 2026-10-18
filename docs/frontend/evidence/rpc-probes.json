@@ -1,0 +1,35 @@
+{
+  "chainId": 11155111,
+  "broadcastTransactions": false,
+  "checks": [
+    {
+      "rpc": "https://ethereum-sepolia-rpc.publicnode.com",
+      "method": "eth_chainId",
+      "result": {
+        "jsonrpc": "2.0",
+        "result": "0xaa36a7",
+        "id": 1
+      }
+    },
+    {
+      "rpc": "https://rpc.sepolia.ethpandaops.io",
+      "method": "eth_chainId",
+      "result": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0xaa36a7"
+      }
+    },
+    {
+      "rpc": "https://sepolia.rpc.sentio.xyz",
+      "method": "eth_chainId",
+      "result": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0xaa36a7"
+      }
+    }
+  ],
+  "limitation": "This probe only reads chain ID. It does not establish browser wallet behavior or successful transactions.",
+  "note": "An initial probe earlier in this run returned HTTP 403 for all three RPCs. This subsequent probe succeeded for all three. See live-chain.json for the later deployment-code and state checks."
+}

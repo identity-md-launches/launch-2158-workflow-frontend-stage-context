@@ -1,0 +1,89 @@
+{
+  "at": "2026-10-18T10:00:02.992Z",
+  "chainId": 11155111,
+  "broadcastTransactions": false,
+  "rpcs": [
+    {
+      "rpc": "https://ethereum-sepolia-rpc.publicnode.com",
+      "chainId": 11155111
+    },
+    {
+      "rpc": "https://rpc.sepolia.ethpandaops.io",
+      "chainId": 11155111
+    },
+    {
+      "rpc": "https://sepolia.rpc.sentio.xyz",
+      "chainId": 11155111
+    }
+  ],
+  "code": [
+    {
+      "name": "LaunchToken",
+      "address": "0xe38529515da53bad2951060f7c43e8f3458990e5",
+      "bytes": 1739,
+      "nonempty": true
+    },
+    {
+      "name": "LockerTreasury",
+      "address": "0xbc0bdf9b4a3c1b7dcea14aa5d55d9187bfadc73a",
+      "bytes": 2457,
+      "nonempty": true
+    },
+    {
+      "name": "LockerFarmFactory",
+      "address": "0xefea131b90183150eac7c53b51a1dc995e2f78f9",
+      "bytes": 15464,
+      "nonempty": true
+    },
+    {
+      "name": "LockerFarm",
+      "address": "0x21f47f330d99cd1ce97a6fb9553126ed58a18fc0",
+      "bytes": 12198,
+      "nonempty": true
+    }
+  ],
+  "readState": {
+    "block": "11940337",
+    "timestamp": "1792317600",
+    "verified": true,
+    "owner": "0xDEA11b3A70b77134424d436f6eb455f1Abbd4449",
+    "factoryOwner": "0xDEA11b3A70b77134424d436f6eb455f1Abbd4449",
+    "treasuryBalance": "0",
+    "farms": [
+      {
+        "address": "0x21f47f330d99cd1ce97a6fb9553126ed58a18fc0",
+        "token": {
+          "address": "0xe38529515DA53bad2951060f7C43E8F3458990E5",
+          "symbol": "LOCKER",
+          "decimals": 18,
+          "balance": "0"
+        },
+        "totalStaked": "0",
+        "rewardReserve": "0",
+        "rewardRate": "0",
+        "periodFinish": "0",
+        "registered": false,
+        "depositsPaused": false
+      }
+    ],
+    "farmErrors": []
+  },
+  "quote": {
+    "inputCurrency": "0x0000000000000000000000000000000000000000",
+    "input": "1000000000000000",
+    "output": "49149205162735736687161",
+    "gasEstimate": "74249",
+    "block": "11940337"
+  },
+  "swapSimulation": {
+    "passed": true,
+    "direction": "native ETH to LOCKER",
+    "input": "0.001 ETH",
+    "slippage": "0.5%",
+    "sent": false
+  },
+  "limitations": [
+    "No live wallet connection, signature, approval or broadcast was performed. Browser transaction interactions are mocked.",
+    "Read-only simulations describe the state at the recorded block and do not guarantee future execution."
+  ]
+}

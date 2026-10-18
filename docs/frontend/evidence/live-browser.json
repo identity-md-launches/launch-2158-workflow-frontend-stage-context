@@ -1,0 +1,141 @@
+{
+  "browser": "156.0.8078.4",
+  "mocked": false,
+  "viewports": [
+    {
+      "viewport": 320,
+      "scroll": 320,
+      "block": "Block 11940411Refresh ↻",
+      "fontLoaded": true,
+      "action": {
+        "x": 33,
+        "y": 681.984375,
+        "width": 254,
+        "height": 46
+      }
+    },
+    {
+      "viewport": 390,
+      "scroll": 390,
+      "block": "Block 11940411Refresh ↻",
+      "fontLoaded": true,
+      "action": {
+        "x": 41,
+        "y": 685.984375,
+        "width": 308,
+        "height": 46
+      }
+    },
+    {
+      "viewport": 1440,
+      "scroll": 1440,
+      "block": "Block 11940411Refresh ↻",
+      "fontLoaded": true,
+      "action": {
+        "x": 73,
+        "y": 825,
+        "width": 384.65625,
+        "height": 46
+      }
+    }
+  ],
+  "colors": {
+    "border": "rgb(112, 135, 116)",
+    "background": "rgb(16, 21, 18)",
+    "token": "#708774"
+  },
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/assets/index-Bn8LuFih.css",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/assets/index-Di3E6mjh.js",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/imd-deployment.json",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/assets/pixelify-700-D3Xxx3QE.woff2",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/abi/LaunchToken.json",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/abi/LockerTreasury.json",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/abi/LockerFarmFactory.json",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/abi/LockerFarm.json",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/site-settings.json",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/assets/dist-XkRxtfuq.js",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:44835/preview/assets/pixelify-600-Dd_Dy7u5.woff2",
+      "status": 200
+    },
+    {
+      "method": "HEAD",
+      "url": "http://127.0.0.1:44835/preview/",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "https://ethereum-sepolia-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "https://ethereum-sepolia-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "https://ethereum-sepolia-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "https://ethereum-sepolia-rpc.publicnode.com/",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "https://ethereum-sepolia-rpc.publicnode.com/",
+      "status": 200
+    }
+  ],
+  "passed": true
+}

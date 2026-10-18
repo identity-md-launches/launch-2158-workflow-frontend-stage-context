@@ -1,0 +1,65 @@
+{
+  "method": "WCAG sRGB relative luminance for solid colors observed in the browser; no claims for illustration backgrounds",
+  "pairs": [
+    {
+      "pair": "Main text on surface",
+      "foreground": "#f0eee2",
+      "background": "#171e19",
+      "ratio": 14.59
+    },
+    {
+      "pair": "Secondary text on surface",
+      "foreground": "#a8b4a9",
+      "background": "#171e19",
+      "ratio": 7.9
+    },
+    {
+      "pair": "Primary button text",
+      "foreground": "#101512",
+      "background": "#edc773",
+      "ratio": 11.44
+    },
+    {
+      "pair": "Success on surface",
+      "foreground": "#a7cf9c",
+      "background": "#171e19",
+      "ratio": 9.75
+    },
+    {
+      "pair": "Error on surface",
+      "foreground": "#ffb1a4",
+      "background": "#171e19",
+      "ratio": 9.77
+    },
+    {
+      "pair": "Focus against surface",
+      "foreground": "#fff0b9",
+      "background": "#171e19",
+      "ratio": 14.9
+    },
+    {
+      "pair": "Focus against page",
+      "foreground": "#fff0b9",
+      "background": "#101512",
+      "ratio": 16.18
+    },
+    {
+      "pair": "Input boundary on page",
+      "foreground": "#708774",
+      "background": "#101512",
+      "ratio": 4.75
+    },
+    {
+      "pair": "Control boundary on surface",
+      "foreground": "#708774",
+      "background": "#171e19",
+      "ratio": 4.37
+    },
+    {
+      "pair": "Control boundary on hover",
+      "foreground": "#708774",
+      "background": "#263129",
+      "ratio": 3.48
+    }
+  ]
+}

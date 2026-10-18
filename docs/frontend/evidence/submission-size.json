@@ -1,0 +1,19 @@
+{
+  "limitBytes": 8388608,
+  "measuredCompleteTreeFiles": 332,
+  "measuredCompleteTreeRawBytes": 3893140,
+  "measuredCompleteTreeGitBundleBytes": 1217658,
+  "measurementExcludes": [
+    "docs/frontend/evidence/submission-size.json"
+  ],
+  "additionalReportAndPackagingAllowanceBytes": 65536,
+  "conservativeBundleBudgetBytes": 1283194,
+  "passed": true,
+  "bundleMethod": "A fresh temporary Git repository under test/scratch packages all original tracked files and all nonignored delivery files except this report into a complete-tree commit and bundle. A further 64 KiB covers this report and packaging metadata. The readonly assignment Git repository is unchanged; the publisher creates its own final commit/bundle.",
+  "newDeliveryFiles": 91,
+  "modifiedExistingFiles": [],
+  "outOfScopePaths": [],
+  "dependencyOrArchiveFiles": [],
+  "gitSubmodules": [],
+  "exportAssetBytes": 868467
+}
